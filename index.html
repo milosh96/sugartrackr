@@ -12,7 +12,14 @@
     <title>Sugar Trackr - App Landing Page</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+   <!-- <link rel="icon" href="img/core-img/favicon.ico">-->
+   <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+   <link rel="manifest" href="/icon/site.webmanifest">
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <!-- Core Stylesheet -->
     <link href="style.css" rel="stylesheet">
@@ -51,7 +58,7 @@
                             <div class="collapse navbar-collapse" id="selene-navbar">
                                 <ul class="navbar-nav ml-auto" id="nav">
                                     <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#about">Features</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -62,19 +69,6 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Search Form Area Start ***** -->
-    <div class="search-form-area">
-        <!-- Remove btn -->
-        <div class="remove-btn">
-            <i class="fa fa-times"></i>
-        </div>
-        <!-- Search Form -->
-        <form action="#" method="post">
-            <input type="search" name="search" id="search" placeholder="Type keywords &amp; hit enter">
-            <button type="submit" class="d-none"><img src="img/core-img/search-icon.png" alt="Search"></button>
-        </form>
-    </div>
-    <!-- ***** Search Form Area End ***** -->
 
     <!-- ***** Wellcome Area Start ***** -->
     <section class="welcome_area clearfix" id="home">
@@ -90,7 +84,10 @@
                 <div class="col-12 col-md-7">
                     <div class="welcome-content">
                         <h2><span>SUGAR TRACKR</span> APP</h2>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta.</h4>
+                        <h4>
+                            Keep track of your sugar levels and insulin intake. Analyze your data with beautiful graphs, summaries 
+                            and share everything in data-rich pdf files. </br> <b>All Free</b>.
+                        </h4>
                     </div>
                     <div class="app-download-area">
                         <div class="app-download-btn">
@@ -105,7 +102,7 @@
                     </div>
                     <!-- Scroll btn -->
                     <div class="scroll-down-btn">
-                        <a href="#about" class="scrollDown">Scroll Down <i class="fa fa-angle-double-down scroll-down" aria-hidden="true"></i></a>
+                        <a href="#features" class="scrollDown">Scroll Down <i class="fa fa-angle-double-down scroll-down" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -113,13 +110,13 @@
 
         <!-- Mobile Device -->
         <div class="welcome-mobile-device text-right">
-            <img src="img/bg-img/wel-dev-1.png" alt="">
+            <img src="img/st/slide-novo3.png" alt="">
         </div>
     </section>
     <!-- ***** Wellcome Area End ***** -->
 
     <!-- ***** About App Area Start ***** -->
-    <div class="about-app-area" id="about">
+    <div class="about-app-area" id="features">
 
         <!-- Shape -->
         <div class="about-us-bg-shape">
@@ -130,46 +127,37 @@
             <div class="row align-items-center">
                 <!-- About App Slider -->
                 <div class="col-12 col-md-7">
-                    <div class="about-apps-slider owl-carousel">
-                        <!-- Single Slide -->
-                        <div class="app-single-slide">
-                            <img src="img/bg-img/slide-1.jpg" alt="">
-                        </div>
-                        <!-- Single Slide -->
-                        <div class="app-single-slide">
-                            <img src="img/bg-img/slide-2.jpg" alt="">
-                        </div>
-                        <!-- Single Slide -->
-                        <div class="app-single-slide">
-                            <img src="img/bg-img/slide-3.jpg" alt="">
-                        </div>
-                        <!-- Single Slide -->
-                        <div class="app-single-slide">
-                            <img src="img/bg-img/slide-2.jpg" alt="">
-                        </div>
-                    </div>
+                    <video class="center-item" max-width="50%" height="480" controls>
+                        <source src="img/st/tutorial.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                      
                 </div>
                 <!-- About App Content -->
                 <div class="col-12 col-md-5">
                     <div class="about-app-content">
-                        <h2>Mobile ready</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta.Lorem ipsum dolor sit amet.</p>
+                        <h2>An app for diabetics</h2>
+                        <p>This application was created to help diabetics keep track of their insuin intake and sugar levels before and after meals. With a beautiful and modern design, it's easy
+                            to use for people of all ages. It will bring life to your data with colorful graphs and summaries.
+                        </p>
                         <div class="app-feature-icon d-flex">
                             <!-- Single App Feature Icon  -->
                             <div class="single-app-feature-icon d-flex align-items-center justify-content-center">
-                                <img src="img/bg-img/icon-1.png" alt="">
+                               <!-- <img src="img/bg-img/icon-1.png" alt="">-->
+                                <span class="material-icons" style="font-size: 48px;"> create</span>
+                            </div>
+                            <!-- Single App Feature Icon -->
+                            <div class="single-app-feature-icon d-flex align-items-center justify-content-center">
+                                <span class="material-icons" style="font-size: 48px;"> bar_chart</span>
+                            </div>
+                            
+                            <!-- Single App Feature Icon  -->
+                            <div class="single-app-feature-icon d-flex align-items-center justify-content-center">
+                                <span class="material-icons" style="font-size: 48px;"> text_snippet</span>
                             </div>
                             <!-- Single App Feature Icon  -->
                             <div class="single-app-feature-icon d-flex align-items-center justify-content-center">
-                                <img src="img/bg-img/icon-2.png" alt="">
-                            </div>
-                            <!-- Single App Feature Icon  -->
-                            <div class="single-app-feature-icon d-flex align-items-center justify-content-center">
-                                <img src="img/bg-img/icon-3.png" alt="">
-                            </div>
-                            <!-- Single App Feature Icon  -->
-                            <div class="single-app-feature-icon d-flex align-items-center justify-content-center">
-                                <img src="img/bg-img/icon-4.png" alt="">
+                                <span class="material-icons" style="font-size: 48px;"> alarm_on</span>
                             </div>
                         </div>
                     </div>
@@ -181,17 +169,18 @@
 
     <!-- ***** App FAQ Area Start ***** -->
     <section class="app-faq-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                
+                <div class="col-12 col-md-5">
                     <div class="app-faq-content">
-                        <h2>An app for Each <br>&amp; Everyone</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta.Lorem ipsum dolor sit amet.</p>
+                        <h2>Features</h2>
+                        <p>The SugarTrackr application is filled with amazing features. Check them below to see how best to use the application.</p>
                         <!-- Accordian Area -->
                         <div class="accordions" id="accordion" role="tablist" aria-multiselectable="true">
                             <!-- single accordian area start -->
                             <div class="panel single-accordion">
-                                <h6><a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Curabitur pulvinar vel augue sit amet vestibulum
+                                <h6><a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Record your data
                                     <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
                                     <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                     </a></h6>
@@ -202,7 +191,7 @@
                             <!-- single accordian area start -->
                             <div class="panel single-accordion">
                                 <h6>
-                                    <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">Keep track
                                         <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
                                         <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                         </a>
@@ -214,7 +203,7 @@
                             <!-- single accordian area start -->
                             <div class="panel single-accordion">
                                 <h6>
-                                    <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Donec scelerisque ante id efficitur pharetra 
+                                    <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Share PDF report
                                         <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
                                         <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                     </a>
@@ -223,26 +212,64 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repudiandae nam ad corrupti illo pariatur inventore ratione reiciendis quidem soluta exercitationem, incidunt, expedita, cupiditate perspiciatis debitis temporibus qui. Culpa, facere.</p>
                                 </div>
                             </div>
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" aria-expanded="true" aria-controls="collapseFour" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour">Add reminders
+                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapseFour" class="accordion-content collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repudiandae nam ad corrupti illo pariatur inventore ratione reiciendis quidem soluta exercitationem, incidunt, expedita, cupiditate perspiciatis debitis temporibus qui. Culpa, facere.</p>
+                                </div>
+                            </div>
+                            <div class="panel single-accordion">
+                                <h6>
+                                    <a role="button" aria-expanded="true" aria-controls="collapseFive" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFive">Backup and restore data
+                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a>
+                                </h6>
+                                <div id="collapseFive" class="accordion-content collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repudiandae nam ad corrupti illo pariatur inventore ratione reiciendis quidem soluta exercitationem, incidunt, expedita, cupiditate perspiciatis debitis temporibus qui. Culpa, facere.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-7" style="padding-top: 80px;">
+                    <div class="about-apps-slider owl-carousel">
+                        <!-- Single Slide -->
+                        <div class="app-single-slide">
+                            <img src="img/st/home.jpg" alt="">
+                        </div>
+                        <div class="app-single-slide">
+                            <img src="img/st/record.jpg" alt="">
+                        </div>
+                        <!-- Single Slide -->
+                        <div class="app-single-slide">
+                            <img src="img/st/list.jpg" alt="">
+                        </div>
+                        <!-- Single Slide -->
+                        <div class="app-single-slide">
+                            <img src="img/st/graph.jpg" alt="">
+                        </div>
+                        <!-- Single Slide -->
+                        <div class="app-single-slide">
+                            <img src="img/st/summary.jpg" alt="">
+                        </div>
+                        <div class="app-single-slide">
+                            <img src="img/st/reminders.jpg" alt="">
+                        </div>
+                        <div class="app-single-slide">
+                            <img src="img/st/backup.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <!-- App Users Map Area -->
-        <div class="app-users-map-area">
-            <img src="img/bg-img/world-map.png" alt="">
-            <div class="map-pins">
-                <!-- Single Pin -->
-                <div class="single-map-pin"></div>
-                <!-- Single Pin -->
-                <div class="single-map-pin"></div>
-                <!-- Single Pin -->
-                <div class="single-map-pin"></div>
-                <!-- Single Pin -->
-                <div class="single-map-pin"></div>
-            </div>
-        </div>
     </section>
     <!-- ***** App FAQ Area End ***** -->
 
@@ -257,58 +284,14 @@
                 <div class="container">
                     <div class="row">
                         <!-- Single Cool Fact -->
-                        <div class="col-12 col-sm-6 col-md">
+                        <div class="col-12 col-sm-12 col-md-12">
                             <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="counter-area">
-                                    <h3><span class="counter">10</span></h3>
+                                    <h3><span>Your health is important, keep track of it.</span></h3>
                                 </div>
-                                <div class="cool-facts-content">
+                                <!--<div class="cool-facts-content">
                                     <p>Years of Experience</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Cool Fact-->
-                        <div class="col-12 col-sm-6 col-md">
-                            <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="counter-area">
-                                    <h3>+<span class="counter">500</span></h3>
-                                </div>
-                                <div class="cool-facts-content">
-                                    <p>Happy Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Cool Fact -->
-                        <div class="col-12 col-sm">
-                            <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="counter-area">
-                                    <h3><span class="counter">17</span>k</h3>
-                                </div>
-                                <div class="cool-facts-content">
-                                    <p>Followers on FB</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Cool Fact -->
-                        <div class="col-12 col-sm">
-                            <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.8s">
-                                <div class="counter-area">
-                                    <h3><span class="counter">132</span></h3>
-                                </div>
-                                <div class="cool-facts-content">
-                                    <p>Finished Projects</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Cool Fact -->
-                        <div class="col-12 col-sm">
-                            <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.8s">
-                                <div class="counter-area">
-                                    <h3><span class="counter">03</span></h3>
-                                </div>
-                                <div class="cool-facts-content">
-                                    <p>Coffes a day</p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -324,185 +307,49 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="app-features-content">
-                        <h2>All the best features</h2>
+                        <h2>Create <br>&amp; Share PDF reports</h2>
                         <div class="row">
                             <!-- Single Feature Area -->
-                            <div class="col-12 col-sm-6">
+                           <!-- <div class="col-12 col-sm-6">
                                 <div class="single-feature-area">
                                     <img src="img/bg-img/feature-1.png" alt="">
                                     <h5>No1 in Sales!</h5>
                                     <p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
                                 </div>
                             </div>
-                            <!-- Single Feature Area -->
-                            <div class="col-12 col-sm-6">
-                                <div class="single-feature-area">
-                                    <img src="img/bg-img/feature-2.png" alt="">
-                                    <h5>Online Marketing</h5>
-                                    <p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-                                </div>
-                            </div>
-                            <!-- Single Feature Area -->
-                            <div class="col-12 col-sm-6">
-                                <div class="single-feature-area">
-                                    <img src="img/bg-img/feature-3.png" alt="">
-                                    <h5>Modern Design</h5>
-                                    <p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-                                </div>
-                            </div>
-                            <!-- Single Feature Area -->
-                            <div class="col-12 col-sm-6">
-                                <div class="single-feature-area">
-                                    <img src="img/bg-img/feature-4.png" alt="">
-                                    <h5>Documented</h5>
-                                    <p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-                                </div>
-                            </div>
-                            <!-- Single Feature Area -->
-                            <div class="col-12 col-sm-6">
-                                <div class="single-feature-area">
-                                    <img src="img/bg-img/feature-5.png" alt="">
-                                    <h5>Easy to use</h5>
-                                    <p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-                                </div>
-                            </div>
-                            <!-- Single Feature Area -->
-                            <div class="col-12 col-sm-6">
-                                <div class="single-feature-area">
-                                    <img src="img/bg-img/feature-6.png" alt="">
-                                    <h5>Google Font</h5>
-                                    <p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-                                </div>
-                            </div>
+                            
+                        -->
+                        <p>This mobile application helps you keep track of your insulin intake and sugar levels before and after meals. With a beautiful and modern design, you'll have
+                            access to all your previous recorded data in list views or in line chart graphs. You'll be able to filter you data by time periods or meals, and 
+                            see summaries for your data - <i>minimum</i>, <i>maximum</i> and <i>average</i> values. Additionaly, you can save and share data-rich pdf files, add reminders
+                            to record your data and backup and restore everything..</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <object class="center-item" data="img/st/st_pdf.pdf" type="application/pdf" width="100%" height="500px"> </object>
                 </div>
             </div>
         </div>
         
         <!-- App Feature Thumb -->
-        <div class="app-feature-side-thumb">
-            <img src="img/bg-img/feature-side.jpg" alt="">
-        </div>
+        <!--<div class="app-feature-side-thumb">
+          
+                <object class="center-item" data="img/st/st_pdf.pdf" type="application/pdf" width="720px" height="480px"> </object>
+            
+        </div>-->
     </section>
-    <!-- ***** App Feature Area End ***** -->
-
-    <!-- ***** Pricing Plane Area Start ***** -->
-    <section class="pricing-plan-area section_padding_100_70 clearfix" id="pricing">
-        <div class="container">
-
-            <div class="row no-gutters">
-                <!-- Single Price Plan -->
-                <div class="col-12 col-md-4">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Head -->
-                        <div class="package-head">
-                            <p class="sub-title">begginer</p>
-                            <div class="ca-price d-flex justify-content-center">
-                                <h4>Free</h4>
-                            </div>
-                            <p class="plan-period">Always</p>
-                        </div>
-                        <!-- Package Description -->
-                        <div class="package-description">
-                            <p>2 E-mail Addresess</p>
-                            <p>25 GB Space</p>
-                            <p>24h Live Support</p>
-                            <p>Documetation inside</p>
-                            <p>SEO Plan</p>
-                        </div>
-                        <!-- Package Info -->
-                        <div class="package-info">
-                            <a href="#"><i class="fa fa-info"></i></a>
-                        </div>
-                        <!-- Order Button  -->
-                        <div class="plan-button">
-                            <a href="#">order plan</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Price Plan -->
-                <div class="col-12 col-md-4">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan active text-center">
-                        <!-- Package Head -->
-                        <div class="package-head">
-                            <p class="sub-title">Recommended</p>
-                            <div class="ca-price d-flex justify-content-center">
-                                <h4>$29</h4>
-                                <span>90</span>
-                            </div>
-                            <p class="plan-period">Per Month</p>
-                        </div>
-                        <!-- Package Description -->
-                        <div class="package-description">
-                            <p>2 E-mail Addresess</p>
-                            <p>25 GB Space</p>
-                            <p>24h Live Support</p>
-                            <p>Documetation inside</p>
-                            <p>SEO Plan</p>
-                        </div>
-                        <!-- Package Info -->
-                        <div class="package-info">
-                            <a href="#"><i class="fa fa-info"></i></a>
-                        </div>
-                        <!-- Order Button  -->
-                        <div class="plan-button">
-                            <a href="#">order plan</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Price Plan -->
-                <div class="col-12 col-md-4">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Head -->
-                        <div class="package-head">
-                            <p class="sub-title">Professional</p>
-                            <div class="ca-price d-flex justify-content-center">
-                                <h4>$59</h4>
-                                <span>90</span>
-                            </div>
-                            <p class="plan-period">Per Month</p>
-                        </div>
-                        <!-- Package Description -->
-                        <div class="package-description">
-                            <p>2 E-mail Addresess</p>
-                            <p>25 GB Space</p>
-                            <p>24h Live Support</p>
-                            <p>Documetation inside</p>
-                            <p>SEO Plan</p>
-                        </div>
-                        <!-- Package Info -->
-                        <div class="package-info">
-                            <a href="#"><i class="fa fa-info"></i></a>
-                        </div>
-                        <!-- Order Button  -->
-                        <div class="plan-button">
-                            <a href="#">order plan</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ***** Pricing Plane Area End ***** -->
-
-    <!-- ***** Footer Area Start ***** -->
     <footer class="footer-area text-center clearfix">
         <!-- Shape 1 -->
-        <div class="footer-bg-shape">
+        <!--<div class="footer-bg-shape">
             <img src="img/core-img/footer-bg.png" alt="Footer Shape">
-        </div>
+        </div>-->
         <!-- Shape 2 -->
-        <div class="footer-bg-shape-2">
+      <!--  <div class="footer-bg-shape-2">
             <img src="img/core-img/price-table.png" alt="">
         </div>
-
+-->
         <div class="container h-100">
             <div class="row h-100 justify-content-center">
                 <div class="col-12 col-md-8">

@@ -244,7 +244,7 @@ p {
 
 .section-heading > h2 {
     font-weight: 300;
-    color: #5b32b4;
+    color: #e83535;
     font-size: 48px;
     margin: 0;
 }
@@ -577,6 +577,7 @@ p {
     -ms-flex-preferred-size: 1;
     flex-basis: 1;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .app-download-btn a {
@@ -819,6 +820,10 @@ span.accor-open {
     line-height: 2
 }
 
+.app-faq-content {
+    padding-left: 12%;
+}
+
 .app-faq-area {
     position: relative;
     z-index: 1;
@@ -1047,6 +1052,7 @@ span.accor-open {
     z-index: 2;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding-right: 10%;
 }
 
 
@@ -1223,7 +1229,7 @@ span.accor-open {
 
 .copyright-text > p {
     margin-bottom: 0;
-    color: #fff;
+    color: #000;
     font-size: 18px;
 }
 
@@ -1935,12 +1941,22 @@ span.accor-open {
     border-color: #fa91b9;
 }
 
+/*#selene-navbar{
+    background-color: #fc0303 !important;
+}*/
+
 .footer-area.elements-footer {
     padding: 30px 0;
     background: #fa91b9;
     background: -webkit-linear-gradient(to right, #ccfa87, #fa91b9);
     background: -webkit-linear-gradient(left, #ccfa87, #fa91b9);
     background: linear-gradient(to right, #ccfa87, #fa91b9);
+}
+
+.center-item{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* --------------------------------
