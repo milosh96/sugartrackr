@@ -32,6 +32,7 @@
     .welcome-content h2,
     .about-app-content h2,
     .app-faq-content h2,
+    .features-app-content h2,
     .counter-area > h3,
     .app-features-content h2,
     .footer-content h2 {
@@ -107,6 +108,7 @@
     }
     .welcome-content h2,
     .about-app-content h2,
+    .features-app-content h2,
     .app-faq-content h2,
     .counter-area > h3,
     .app-features-content h2,
@@ -238,6 +240,7 @@
     }
     .welcome-content h2,
     .about-app-content h2,
+    .features-app-content h2,
     .app-faq-content h2,
     .counter-area > h3,
     .app-features-content h2,
@@ -271,6 +274,10 @@
     .about-app-content h2,
     .about-app-content p {
         color: #000;
+    }
+    .app-features-content,
+    .features-app-content {
+        padding-left: 0;
     }
     .app-feature-icon {
         margin-top: 30px;
